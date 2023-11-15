@@ -90,7 +90,9 @@ router.post('/',async (req,res)=>{//Post agrega datos
       return res.status(400).json({error:`Se ha producido un error al agregar el producto`});
     } else {
       //** IO */
-     io.emit("nuevoProducto", resultado.title) //Damos inicio al IO 
+    
+       io.emit("nuevoProducto", resultado.title) //Damos inicio al IO
+      
      //** IO */
      res.setHeader("Content-Type", "application/json");
      return res.status(200).json({message:'Producto Agregado', resultado });

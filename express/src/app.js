@@ -40,7 +40,7 @@ app.set('view engine', 'handlebars');
 app.set('views', archivoViews);
 
 let archivoPublic = join(__dirname, "/public")
-app.use(express.static(archivoPublic)) //http://localhost:8080/assets/img/jugadores-ronaldobrasil.jpeg
+app.use(express.static(archivoPublic)) //http://localhost:8080/assets/img/producto.jpg
 
 
 
@@ -61,5 +61,11 @@ app.use(express.static(archivoPublic)) //http://localhost:8080/assets/img/jugado
 
 
   export const io = new Server(server)// Da inicio a socket.io BACKEND
+ io.on("connection", socket=>{
+  console.log(`se conecto un cliente con id ${socket.id}`);
 
-    
+ })
+
+   
+   
+   

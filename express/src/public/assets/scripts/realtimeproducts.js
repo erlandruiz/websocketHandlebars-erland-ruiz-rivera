@@ -18,10 +18,9 @@ socket.on("deleteProducto", borrar=>{
     const lista1 = document.getElementById("lista1")
 
     let li = Array.from(document.getElementsByTagName('li'))
-    console.log (li);
-    console.log(li.length)
+   
     let ultimo = li[li.length-1];
-    console.log(ultimo)
+    
     lista1.removeChild(ultimo)
 
 

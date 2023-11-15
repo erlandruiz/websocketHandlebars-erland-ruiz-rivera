@@ -6,6 +6,7 @@ export const router=Router()
 import { join } from "path";//Utilizamos el path para poder trabajar con rutas absolutas
 import __dirname from '../../../utils2.js'; //Importamos utils para poder trabvajar con rutas absolutas
 import { ProductManager } from '../ProductManager.js';
+import { io } from '../app.js';
 
 
 
@@ -41,6 +42,7 @@ router.get('/', async (req,res)=>{
 })
 router.get('/realtimeproducts',async (req,res)=>{
     try {
+         
         let resultado =  await productManager.getProductsAsyncFS();
         res.status(200).render('realtimeproducts',{resultado, titulo :'RealTime Page'})
 
