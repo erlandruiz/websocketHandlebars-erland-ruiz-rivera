@@ -10,6 +10,6 @@ Para ingresar al home y ver todos los productos.
 Para ver los titulos de los productos , agregar con postman y eliminar con postman
 
 # http://localhost:8080/pagina2.html
-Pagina estatica de ayuda para agregar los productos. El delete  si con solo lo hice con postman.
+Pagina estatica de ayuda para agregar los productos. El delete  si  solo lo hice con postman.
 
 
