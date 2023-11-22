@@ -91,7 +91,7 @@ router.post('/',async (req,res)=>{//Post agrega datos
     } else {
       //** IO */
     
-       io.emit("nuevoProducto", resultado.title) //Damos inicio al IO
+       io.emit("nuevoProducto", resultado) //Damos inicio al IO
       
      //** IO */
      res.setHeader("Content-Type", "application/json");
